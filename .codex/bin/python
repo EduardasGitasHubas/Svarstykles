@@ -1,0 +1,27 @@
+#!/bin/bash
+# Python shim — resolves the correct interpreter in WSL and Git Bash
+# environments where the Windows Python PATH is not inherited.
+
+# 1. WSL interop: python.exe runs the Windows Python directly from WSL
+if command -v python.exe >/dev/null 2>&1; then
+  exec python.exe "$@"
+fi
+
+# 2. Git Bash: $LOCALAPPDATA is set, Python lives in AppData
+if [ -n "${LOCALAPPDATA:-}" ]; then
+  for _dir in "$LOCALAPPDATA/Programs/Python"/Python3*; do
+    if [ -x "$_dir/python.exe" ]; then
+      exec "$_dir/python.exe" "$@"
+    fi
+  done
+fi
+
+# 3. WSL: scan Windows user AppData via /mnt/c
+for _dir in /mnt/c/Users/*/AppData/Local/Programs/Python/Python3*; do
+  if [ -x "$_dir/python.exe" ]; then
+    exec "$_dir/python.exe" "$@"
+  fi
+done
+
+echo "python: interpreter not found" >&2
+exit 127

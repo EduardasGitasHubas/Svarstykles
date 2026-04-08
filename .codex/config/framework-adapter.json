@@ -1,0 +1,13 @@
+{
+  "adapter": "codex",
+  "mode": "parallel_runtime",
+  "shared_state_paths": [
+    ".claude/SNAPSHOT.md",
+    ".claude/BACKLOG.md",
+    ".claude/ARCHITECTURE.md"
+  ],
+  "core_cli": {
+    "cold_start": "py src/framework-core/main.py cold-start",
+    "completion": "py src/framework-core/main.py completion"
+  }
+}

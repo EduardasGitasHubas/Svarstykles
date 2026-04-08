@@ -1,1 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Logs
+.claude/logs/
+*.log
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+
+# Framework private files
+.claude/.last_session
+.claude/.session-owner
+.claude/.last_activity
+dialog/
+reports/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
 .claude/settings.local.json
+.claude/.claude/
