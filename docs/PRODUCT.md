@@ -1,26 +1,27 @@
-# PRODUCT - Pradzia
+# PRODUCT - Svarstykles
 
 *Product goals, scope, and user value*
 
 ## Product Vision
 
-- What problem does this project solve?
-- Who is the primary user?
-- What outcome should this product create?
+- Product vision is still unconfirmed
+- Primary user is not yet documented
+- Desired user outcome still needs owner input
 
 ## Scope
 
 ### In Scope
 
-- Core capability 1
-- Core capability 2
+- Confirm project purpose
+- Define the first shippable capability
+- Select the implementation stack for the real product
 
 ### Out Of Scope
 
-- Explicitly excluded item 1
-- Explicitly excluded item 2
+- Broad feature planning before the core use case is known
+- Premature architecture decisions for unconfirmed requirements
 
 ## Success Criteria
 
-- Success metric 1
-- Success metric 2
+- A clear product definition exists in writing
+- Sprint 1 has one concrete deliverable with acceptance criteria

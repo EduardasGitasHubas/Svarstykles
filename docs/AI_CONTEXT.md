@@ -1,4 +1,4 @@
-# AI CONTEXT - Pradzia
+# AI CONTEXT - Svarstykles
 
 *Optional additional project context for AI agents*
 
@@ -9,7 +9,7 @@
 
 ## Stable Guidance
 
-- Domain terminology:
-- Naming conventions:
-- Non-obvious business rules:
-- Integration caveats:
+- Domain terminology: not yet established
+- Naming conventions: prefer English identifiers in code and docs unless the user requests otherwise
+- Non-obvious business rules: none documented yet
+- Integration caveats: framework commands are validated locally; use Git Bash path on Windows when running framework shell scripts

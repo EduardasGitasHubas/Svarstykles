@@ -1,4 +1,4 @@
-# RISKS - Pradzia
+# RISKS - Svarstykles
 
 *Active delivery, technical, and operational risks*
 
@@ -12,7 +12,7 @@
 
 ### Risk Title
 
-- Date identified: 2026-03-26
+- Date identified: 2026-04-08
 - Severity: low | medium | high
 - Area: product | delivery | architecture | security | operations
 - Description: What could go wrong?

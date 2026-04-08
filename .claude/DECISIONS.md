@@ -1,4 +1,4 @@
-# DECISIONS - Pradzia
+# DECISIONS - Svarstykles
 
 *Architecture and product decisions log*
 
@@ -12,7 +12,7 @@
 
 ### Decision Title
 
-- Date: 2026-03-26
+- Date: 2026-04-08
 - Status: proposed | accepted | superseded
 - Context: What problem or choice triggered this decision?
 - Decision: What was chosen?
